@@ -1,4 +1,4 @@
-import Race from "./Race";
+import Race from './Race';
 
 export default class Dwarf extends Race {
   private _maxLifePoints: number;
