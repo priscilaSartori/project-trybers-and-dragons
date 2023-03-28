@@ -3,7 +3,7 @@ import { EnergyType } from '../Energy';
 
 export default class Warrior extends Archetypes {
   private _energyType: EnergyType;
-  private static _instances = 0;
+  static _instances = 0;
 
   constructor(name: string) {
     super(name);
@@ -15,7 +15,7 @@ export default class Warrior extends Archetypes {
     return this._energyType;
   }
   
-  static createdRacesInstances(): number {
-    return Warrior._instances;
+  static createdArchetypeInstances(): number {
+    return this._instances;
   }
 }
