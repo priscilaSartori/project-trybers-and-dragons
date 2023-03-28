@@ -28,36 +28,39 @@ export default class Character implements Fighter {
     };
   }
 
-  public get race(): Race {
+  get race(): Race {
     return this._race;
   }
 
-  public get archetype(): Archetype {
+  get archetype(): Archetype {
     return this._archetype;
   }
  
-  public get maxLifePoints(): number {
+  get maxLifePoints(): number {
     return this._maxLifePoints;
   }
 
-  public get lifePoints(): number {
+  get lifePoints(): number {
     return this._lifePoints;
   }
 
-  public get strength(): number {
+  get strength(): number {
     return this._strength;
   }
 
-  public get defense(): number {
+  get defense(): number {
     return this._defense;
   }
 
-  public get dexterity(): number {
+  get dexterity(): number {
     return this._dexterity;
   }
 
-  public get energy(): Energy {
-    return this._energy;
+  get energy(): Energy {
+    return {
+      type_: this._energy.type_,
+      amount: this._energy.amount,
+    };
   }
 
   receiveDamage(attackPoints: number) {
