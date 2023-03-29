@@ -1,4 +1,4 @@
-import { PVP } from './Battle';
+import { PVE, PVP } from './Battle';
 import Character from './Character';
 import Dragon from './Dragon';
 import Monster from './Monster';
@@ -13,6 +13,7 @@ const monster1 = new Monster();
 const monster2 = new Dragon();
 
 const pvp = new PVP(player2, player3);
+const pve = new PVE(player1, [monster1, monster2]);
 
 export default {
   player1, 
@@ -21,4 +22,5 @@ export default {
   monster1,
   monster2,
   pvp,
+  pve,
 };
