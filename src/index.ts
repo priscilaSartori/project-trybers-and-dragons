@@ -18,7 +18,7 @@ const pve = new PVE(player1, [monster1, monster2]);
 function runBattles(battles: Battle[]) {
   battles.map((battle) => battle.fight());
 }
-export default {
+export {
   player1, 
   player2,
   player3,
